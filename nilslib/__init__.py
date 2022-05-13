@@ -1,1 +1,1 @@
-from ../nilslib import *
+from nilslib import *
