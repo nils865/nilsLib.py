@@ -1,3 +1,5 @@
+import os
+
 def clampTo(comma, number):
     return int(number * (10 ** comma)) / (10 ** comma)
 
@@ -6,3 +8,6 @@ def setColor(r,g,b):
 
 def setBackgroundColor(r,g,b):
     return(f"\x1b[48;2;{r};{g};{b}m")
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
