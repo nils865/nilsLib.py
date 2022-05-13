@@ -6,7 +6,6 @@ def clampDecimalPlace(comma, number): #Clamps the number to a specified number o
 def setTTYFgCol(r,g,b): #Sets the color of the text foreground (if supported by the terminal)
     return(f"\x1b[38;2;{r};{g};{b}m")
 
-
 def setTTYBgCol(r,g,b): #Sets the color of the text background (if supported by the terminal)
     return(f"\x1b[48;2;{r};{g};{b}m")
 
