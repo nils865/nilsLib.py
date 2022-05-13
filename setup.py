@@ -13,5 +13,5 @@ setuptools.setup(
     url='https://github.com/nils865/nilsLib.py',
     license='MIT',
     packages=['nilslib'],
-    install_requires=['requests'],
+    install_requires=[],
 )
