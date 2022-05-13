@@ -1,17 +1,11 @@
-import setuptools
+from setuptools import setup
 
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
-
-setuptools.setup(
-    name='nilslib',
-    version='1.0',
-    author='Nils',
-    description='Collection of small tools',
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url='https://github.com/nils865/nilsLib.py',
-    license='MIT',
-    packages=['nilslib'],
-    install_requires=[],
-)
+setup(name='funniest',
+      version='0.1',
+      description='A small collection of tools',
+      url='https://github.com/nils865/nilsLib.py',
+      author='Nils Staas',
+      author_email='nils.staas0806@gmail.com',
+      license='MIT',
+      packages=['nilstools'],
+      zip_safe=False)
