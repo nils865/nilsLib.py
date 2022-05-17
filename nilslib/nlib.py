@@ -13,7 +13,7 @@ def clear(): # Clears the console
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def moveCursor(lines): # Moves the cursor up by given lines
-   sys.stdout.write("\x1b[1A" * int(lines))
+   sys.stdout.write(f"\x1b[{lines}A")
 
 def resetColor(): # Resets the color to default
     sys.stdout.write("\x1b[0m")
