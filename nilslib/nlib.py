@@ -17,3 +17,8 @@ def moveCursor(lines): # Moves the cursor up by given lines
 
 def resetColor(): # Resets the color to default
     sys.stdout.write("\x1b[0m")
+
+def cut(string,tocut): # Cuts a string from another string.
+    if string[:len(tocut)] == tocut:
+        return string[len(tocut):]
+    return string
